@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+    height: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.main{
+    width: 1060px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    margin:0 auto;
+    padding:50px;
+    box-shadow: 0px 2px 3px #cccccc;
+}
+         /*начало header*/
+
+nav {
+    background: url(img/panel.png);
+    background-size: 100% 100%;
+    width: 100%;
+    margin:40px auto; 
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav li{
+    border-left: 1px solid transparent; /*невидимые рамки,для отмены искажения при hover*/
+    border-right: 1px solid transparent;
+    display: inline-block;
+    font-size: 15px;   
+}
+nav li a {
+    color: #ffffff;
+    display: block;
+    padding:15px 25px;
+    width: 80px;
+}
+nav li:hover {
+    background-color: #333333;
+    border-left: 1px solid #999999;
+    border-right:1px solid #999999;
+}
+            /*конец header*/
+
+
+            /*aside начало*/
+aside{
+    display: block;
+    float: left;
+    width: 240px;
+}
+aside ul{
+    border: 1px solid #999999;
+    margin: 0;
+    padding: 0;
+}
+aside li{
+    border-bottom: 1px solid #999999;
+}
+aside li:last-child{
+    border-bottom:none; /*убирает задвоение рамки при нажатии на последний эл-т*/
+}
+aside li a {
+    color:#666666;
+    display: block;
+    font-size:14px;
+    padding: 15px 20px 10px 25px;  
+}
+aside li:hover{
+    background:url(img/link.png);  
+    padding-left:15px;
+}
+
+                /*aside конец*/
+
+                /* article начало*/
+article {
+    float: left;
+    width: 690px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+article img{
+    width:655px;
+    border: 1px solid #999999;
+    padding: 55px;
+}
+article p{
+    color:#333333; 
+    display: block;
+    font-size: 13px;
+    line-height: 1.6em;
+    padding-left: 25px;
+    padding-top:50px;
+    text-align: left;
+    width: 650px;    
+}
+                /*article конец*/
+
+                /*footer начало*/      
+footer{
+background-color: #cccccc;
+clear: both;
+height: 40px;
+width: 100%;
+}
+footer ul{
+    padding: 0px;
+    margin: 0px;
+    width: 600px; 
+    float:left;  
+}
+footer li{
+    color:#333333;
+    display: inline-block;
+    font-size: 13px;
+}
+footer a {
+    color:#333333;
+    display: block;
+    padding: 12px 25px;
+    width: 90px;  
+}
+footer li:hover{
+    text-decoration: underline;
+}
+footer p{
+    color:#333333;
+    float:right;
+    display: block;
+    font-size: 13px;
+    padding: 12px 15px;
+    width: 180px;    
+}         /*footer конец*/
